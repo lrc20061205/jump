@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loading...</title>
+</head>
+<body>
+	<div id="URL">
+		
+	</div>
+	<script>
+		function Get_Path() {
+			var url;
+			url = window.location.pathname;
+			url = url.substring(url.lastIndexOf('/') + 1, url.length);
+			document.getElementById("URL").innerHTML = "<a>网站域名变更请点击</a>"+"<a href=http://hmmg.top/"+ url+">这里</a>"
+			
+		}
+		Get_Path();
+
+	</script>
+
+
+</body>
+</html>
